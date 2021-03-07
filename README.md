@@ -8,7 +8,7 @@ Real time view of funds earnings yield
 
 ## set params
 
-- appToken: get the token after created a WxPusher APP
+- appToken: get the token after created a WxPusher APP(line: 41)
 
 ## run command
 
