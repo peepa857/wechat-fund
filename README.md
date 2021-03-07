@@ -12,7 +12,7 @@ Real time view of funds earnings yield
 
 ## run command
 
-`py fund.py` send message to wechat
+- `py fund.py` send message to wechat
 
 ## results
 
