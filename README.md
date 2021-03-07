@@ -20,6 +20,6 @@ Real time view of funds earnings yield
 
 ![image](https://github.com/peepa857/wechat-fund/blob/master/image/qrcode.png)
 
-## timed task
+## scheduled job
 
 [cron の使い方（python スクリプト）](https://qiita.com/saira/items/76a5538a6b2556f6b339)
