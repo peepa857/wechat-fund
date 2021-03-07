@@ -2,6 +2,10 @@
 
 Real time view of funds earnings yield
 
+## create WxPusher APP
+
+[WxPusher 微信信息推送服务](https://wxpusher.zjiecode.com/admin/)
+
 ## set params
 
 - appToken: get the token after created a WxPusher APP
