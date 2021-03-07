@@ -2,12 +2,12 @@ import requests
 import json
 import re
 
-# *fund codes array As target data*
+# fund codes array As target data
 fund_codes = [
     "161725", "320007", "260108", "001938", "003096", "006408", "000596"
 ]
 
-# message for send to chat
+# message for send to wechat
 message = ""
 
 for code in fund_codes:
@@ -41,9 +41,9 @@ wxPusher_data = {
     "appToken": "",  # *set your WxPusher APP Token*
     # "summary": "今日基金实时涨跌情况提醒",
     "content": message,
-    "contentType": 3,  # values:「1:text,2:html,3:markdown」
-    "topicIds": [1650],
-    # "uids": [""], # *target wechat user id*
+    "contentType": 3,  # values:「1:text, 2:html, 3:markdown」
+    "topicIds": [],  # *send target topic ids*
+    # "uids": [""], # target wechat user id optional when topicIds is applied
     # "url": "https://financeprod.alipay.com/account/finance/index.htm"
 }
 # send request
