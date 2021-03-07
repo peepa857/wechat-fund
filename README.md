@@ -14,7 +14,7 @@ Real time view of funds earnings yield
 
 - `py fund.py` send message to wechat
 
-## results
+## screen shot
 
 ![image](https://github.com/peepa857/wechat-fund/blob/master/image/wx-message.png)
 
