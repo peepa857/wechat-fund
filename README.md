@@ -30,7 +30,7 @@ Real time view of funds earnings yield
 
 ![image](https://github.com/peepa857/wechat-fund/blob/master/image/wx-message.png)
 
-![image](https://github.com/peepa857/wechat-fund/blob/master/image/message-detail.png)
+![image](https://github.com/peepa857/wechat-fund/blob/master/image/version-2.png)
 
 ## scheduled job
 
