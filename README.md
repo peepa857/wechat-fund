@@ -24,7 +24,7 @@ Real time view of funds earnings yield
 
 ## run command
 
-- `python3 fund.py` send message to wechat
+- `py fund.py` send message to wechat
 
 ## screen shot
 
@@ -38,17 +38,23 @@ Real time view of funds earnings yield
 
 ## scheduled job
 
-[cron の使い方（python スクリプト）](https://qiita.com/saira/items/76a5538a6b2556f6b339)
+macOS/Linux: [cron の使い方（python スクリプト）](https://qiita.com/saira/items/76a5538a6b2556f6b339)
 
-- create start.sh
+1. create shell `start.sh`
 
-```
+```shell
 #!/bin/bash
 source /etc/profile
 python3 {FULL PATH}/wechat-fund/fund.py
 ```
-- crontab
 
-`crontab -e`
+2. crontab
 
-`45 14 * * 1-5 {FULL PATH}/start.sh >> {FULL PATH}/Desktop/crontab_log.txt`
+- edit crontab
+  `crontab -e`
+
+- paste, replace path and save (run at working day 14:45)
+  `45 14 * * 1-5 {FULL PATH}/start.sh >> {FULL PATH}/Desktop/crontab_log.txt`
+
+- confirm results
+  `crontab -l`
