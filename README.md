@@ -20,7 +20,7 @@ Real time view of funds earnings yield
 
 ## install dependencies
 
-- cpip install requests`
+- `pip install requests`
 
 ## run command
 
