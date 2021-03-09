@@ -51,4 +51,4 @@ python3 {FULL PATH}/wechat-fund/fund.py
 
 `crontab -e`
 
-`45 15 * * 1-5 {FULL PATH}/start.sh >> {FULL PATH}/Desktop/crontab_log.txt`
+`45 14 * * 1-5 {FULL PATH}/start.sh >> {FULL PATH}/Desktop/crontab_log.txt`
