@@ -51,10 +51,13 @@ python3 {FULL PATH}/wechat-fund/fund.py
 2. crontab
 
 - edit crontab
+
   `crontab -e`
 
 - paste, replace path and save (run at working day 14:45)
+
   `45 14 * * 1-5 {FULL PATH}/start.sh >> {FULL PATH}/Desktop/crontab_log.txt`
 
 - confirm results
+
   `crontab -l`
