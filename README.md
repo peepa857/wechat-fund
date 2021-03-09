@@ -20,11 +20,11 @@ Real time view of funds earnings yield
 
 ## install dependencies
 
-- `pip install requests`
+- cpip install requests`
 
 ## run command
 
-- `py fund.py` send message to wechat
+- `python3 fund.py` send message to wechat
 
 ## screen shot
 
@@ -39,3 +39,9 @@ Real time view of funds earnings yield
 ## scheduled job
 
 [cron の使い方（python スクリプト）](https://qiita.com/saira/items/76a5538a6b2556f6b339)
+
+```start.sh
+#!/bin/bash
+source /etc/profile
+python3 {FULL PATH}/fund.py >> crontab_log.txt
+```
