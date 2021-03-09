@@ -40,8 +40,11 @@ Real time view of funds earnings yield
 
 [cron の使い方（python スクリプト）](https://qiita.com/saira/items/76a5538a6b2556f6b339)
 
-```start.sh
+- start.sh
+```
 #!/bin/bash
 source /etc/profile
-python3 {FULL PATH}/fund.py >> crontab_log.txt
+python3 {FULL PATH}/wechat-fund/fund.py
 ```
+- crontab
+`45 15 * * 1-5 {FULL PATH}/start.sh >> {FULL PATH}/Desktop/crontab_log.txt`
