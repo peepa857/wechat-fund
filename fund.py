@@ -1,10 +1,17 @@
 import requests
 import json
 import re
+import time
 
 # fund codes array As target data
 fund_codes = [
-    "161725", "320007", "260108", "001938", "003096", "006408", "000596"
+    "161725",
+    "320007",
+    "260108",
+    "001938",
+    "003096",
+    "006408",
+    "000596",
 ]
 
 # message for send to wechat
@@ -31,23 +38,35 @@ for code in fund_codes:
     # get fund data from array
     for i in search:
         data = json.loads(i)
-        message += ("基金: <u>{}</u>，估算涨幅率: **{}%**\n".format(
-            data['name'], data['gszzl']))
+        if float(data['gszzl']) > 0:
+            message += (
+                "基金: <u>{}</u>，估算涨幅率: <span style='font-weight:bold;color:red'>{}%</span> \n"
+                .format(data['name'], data['gszzl']))
+        elif float(data['gszzl']) == 0:
+            message += (
+                "基金: <u>{}</u>，估算涨幅率: <span style='font-weight:bold'>{}%</span> \n"
+                .format(data['name'], data['gszzl']))
+        else:
+            message += (
+                "基金: <u>{}</u>，估算涨幅率: <span style='font-weight:bold;color:green'>{}%</span> \n"
+                .format(data['name'], data['gszzl']))
 
 # post URL by WxPusher
 wxPusher_url = "http://wxpusher.zjiecode.com/api/send/message"
 # post body
 wxPusher_data = {
     "appToken": "",  # *set your WxPusher APP Token*
-    # "summary": "今日基金实时涨跌情况提醒",
+    # "summary": "基金涨跌情况实时提醒",
     "content": message,
     "contentType": 3,  # values:「1:text, 2:html, 3:markdown」
     "topicIds": [],  # *send target topic ids*
-    # "uids": [""], # target wechat user id optional when topicIds is applied
-    # "url": "https://financeprod.alipay.com/account/finance/index.htm"
+    # "uids": [""], # target wechat user id, optional when topicIds is applied
+    # "url": "http://fund.eastmoney.com/fundguzhi.html"
 }
 # send request
 res = requests.post(url=wxPusher_url,
                     data=json.dumps(wxPusher_data),
                     headers=headers)
+
+print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
 print(res.text)
