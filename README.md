@@ -32,10 +32,6 @@ Real time view of funds earnings yield
 
 ![image](https://github.com/peepa857/wechat-fund/blob/master/image/message-detail.png)
 
-## my fund APP QRcode
-
-![image](https://github.com/peepa857/wechat-fund/blob/master/image/qrcode.png)
-
 ## scheduled job
 
 macOS/Linux: [cron の使い方（python スクリプト）](https://qiita.com/saira/items/76a5538a6b2556f6b339)
@@ -61,3 +57,7 @@ python3 {FULL PATH}/wechat-fund/fund.py
 - confirm results
 
   `crontab -l`
+
+## my fund APP QRcode
+
+![image](https://github.com/peepa857/wechat-fund/blob/master/image/qrcode.png)
