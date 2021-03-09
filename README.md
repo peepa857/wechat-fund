@@ -1,6 +1,6 @@
 # wechat-fund
 
-Real time view of funds earnings yield
+Real time view of funds information
 
 ## environment
 
