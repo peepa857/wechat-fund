@@ -14,9 +14,9 @@ Real time view of funds information
 
 ## set params
 
-- appToken: get the token after created a WxPusher APP (line: 41)
+- appToken: get the token after created a WxPusher APP (line: 58)
 
-- topicIds: get topicId after created a topic of APP (line: 45)
+- topicIds: get topicId after created a topic of APP (line: 62)
 
 ## install dependencies
 
@@ -50,9 +50,9 @@ python3 {FULL PATH}/wechat-fund/fund.py
 
   `crontab -e`
 
-- paste, replace path and save (run at working day 14:45)
+- paste, replace path and save (run at working day 14:40)
 
-  `45 14 * * 1-5 {FULL PATH}/start.sh >> {FULL PATH}/Desktop/crontab_log.txt`
+  `40 14 * * 1-5 {FULL PATH}/start.sh >> {FULL PATH}/Desktop/crontab_log.txt`
 
 - confirm results
 
