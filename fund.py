@@ -12,6 +12,8 @@ fund_codes = [
     "003096",
     "006408",
     "000596",
+    "011854",
+    "000692",
 ]
 
 # message for send to wechat
