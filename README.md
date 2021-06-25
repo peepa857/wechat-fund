@@ -64,6 +64,10 @@ wechat
 
 ![image](https://github.com/peepa857/wechat-fund/blob/master/image/qrcode.png)
 
-line
+## plan B
 
-![image](https://github.com/peepa857/wechat-fund/blob/master/image/WechatIMG202.png)
+line-bot
+
+![image](https://github.com/peepa857/wechat-fund/blob/master/image/line-message.png)
+
+![image](https://github.com/peepa857/wechat-fund/blob/master/image/linebot-qrcode.png)

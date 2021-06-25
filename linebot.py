@@ -17,7 +17,7 @@ fund_codes = [
 ]
 
 # line channel access token
-access_token = 'WaQ79DcsAgvTF0deitRZsS0TkJZLTaDMKFBlUDdOGy6ArBQjMDBwQJHKdyo4PIudjQXRXgKwTomYn8sLNd5RIP1eOu9eLeHdFB9/Ej5P+xOBaG1u3/GDYBUjRM/coQg+Z0MRkDYoLj+y4cbSccrctgdB04t89/1O/w1cDnyilFU='
+access_token = ''
 
 # message for send to line
 message = ""
@@ -62,8 +62,9 @@ line_headers = {
 message_list = {'messages': [{'type': 'text', 'text': message[:-1]}]}
 
 # encode to json
-data = json.dumps(message_list)
-response = requests.post(url=line_url, headers=line_headers, data=data)
+message_data = json.dumps(message_list)
+# post message request
+response = requests.post(url=line_url, headers=line_headers, data=message_data)
 
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
 print(response)
