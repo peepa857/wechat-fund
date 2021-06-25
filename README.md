@@ -61,7 +61,9 @@ python3 {FULL PATH}/wechat-fund/fund.py
 ## my fund APP QRcode
 
 wechat
+
 ![image](https://github.com/peepa857/wechat-fund/blob/master/image/qrcode.png)
 
 line
+
 ![image](https://github.com/peepa857/wechat-fund/blob/master/image/WechatIMG202.png)
