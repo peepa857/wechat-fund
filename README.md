@@ -66,7 +66,7 @@ wechat
 
 ## plan B
 
-line-bot
+send fund information by LineBot
 
 ![image](https://github.com/peepa857/wechat-fund/blob/master/image/line-message.png)
 
